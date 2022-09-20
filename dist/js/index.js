@@ -1,6 +1,6 @@
 const btn = document.getElementById("click")
 const color = document.querySelector(".color")
-let bg = ["red","brown", 'grey', "gold","purple", "green", "rgb(130, 568, 463)", "#f1f5f8"];
+let bg = ["red","brown", 'grey', "gold","purple", "green",];
 
 btn.addEventListener('click',  ()=>{
     // alert('hi')
@@ -11,5 +11,5 @@ btn.addEventListener('click',  ()=>{
 })
 
 // getting a random number between zero and three
-export const getRandom = ()=> Math.floor(Math.random() * bg.length)
+const getRandom = ()=> Math.floor(Math.random() * bg.length)
 
