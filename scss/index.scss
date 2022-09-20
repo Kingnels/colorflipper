@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;text-decoration: none;list-style-type: none;color: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #f1f5f8;
+
+    nav{
+       
+        box-shadow: 0 4px 4px rgb(104, 99, 99);
+        display:flex;
+        justify-content: space-between;
+        line-height: 1.7;
+        padding: .7rem 25%;
+        font-size: 1.8rem;
+        background-color: white;
+
+        h4{
+            color:brown;
+        }
+        ul{
+            // padding-top: .2rem;
+            display:flex;
+            gap: 1rem;
+            font-size:1rem;
+            li{
+                font-size: 2rem;
+                
+
+                a{
+                    color: red;
+                    &:hover{
+                    color: yellow;
+                    transition: all .7s ease-in-out;
+                    }
+                }
+                
+                .hexy{
+                    color: black;
+                    border:3px solid black;
+                    padding-left: 1rem;
+                    border-top: transparent;
+                    border-right: transparent;
+                    border-bottom: transparent;
+
+                    &:hover{
+                        color: blue;
+                        transition: all .7s ease-in-out;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+    .container{
+        padding: 2rem 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        // border: 2px solid green;
+        margin: 7rem 30%;;
+
+        .dashboard{
+            border-radius: 20px;
+            text-align:center;
+            width: 100%;
+            padding: 2rem;
+            background-color: black;
+            border: 2px solid rgb(255, 208, 37);
+            margin: 2rem;
+            display: inline-block;
+
+            h3{ 
+                font-weight: 800;
+                font-size: 2rem;
+                display: inline-block;
+                color: white;
+            }
+            span{
+                font-weight: 800;
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding-left: 1rem;
+                color: white;  
+            }
+        }
+
+        button{
+            width: 180px;
+            height: 40px;
+            background: none;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            text-transform: uppercase;
+                &:hover{
+                    // transition: all .7s ease-in-out;
+                    background-color: rgb(82, 80, 80);
+                    color: white;
+                }
+        }
+        
+    }
+
+}
